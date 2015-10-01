@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>We have a question for you. Click the button to find out. </p>
+
+<button onclick="myFunction()">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+	function myFunction() {
+		var text;
+		var favSeason = prompt("What is your favorite season?","Autumn");
+		switch(favSeason) {
+			case "Summer":
+				text = "Hot Choice. You have a bright personality.";
+				break;
+			case "Winter":
+				text = "Cool as ice. You are a person who enjoys life at its fullest.";
+				break;
+			case "Spring":
+				text = "Lovely! Like flowers blooming, you bring happiness to the people around you.";
+				break;
+			case "Autumn":
+				text = "Perfect! You face the world and it's challenges head on.";
+				break;
+			default:
+				text: "That season does not exist.";
+		}
+		document.getElementById("demo").innerHTML = text;
+	}
+</script>
+
+</body>
+</html>
